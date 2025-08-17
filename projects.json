@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Municipio de Morón",
+    "description": "Official website for the Municipality of Morón, providing services and information to its citizens.",
+    "image": "img/moron.png",
+    "url": "https://www.moron.gob.ar/"
+  },
+  {
+    "title": "Serpa",
+    "description": "Corporate website for Serpa, a leader in logistics and transportation services.",
+    "image": "img/serpa.png",
+    "url": "https://serpa.com.ar/"
+  }
+]

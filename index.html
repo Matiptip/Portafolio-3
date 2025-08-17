@@ -257,6 +257,23 @@
         </div>
     </section>
 
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    My <span class="gradient-text">Work</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Here are a few examples of projects I've worked on.
+                </p>
+            </div>
+            <div id="portfolio-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project cards will be injected here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
     <!-- Testimonials -->
     <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
         <div class="max-w-7xl mx-auto">
@@ -353,18 +370,18 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
-                    <form class="space-y-6">
+                    <form action="https://formspree.io/f/xdkdvlnk" method="POST" class="space-y-6">
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Your Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                         </div>
                         <div>
                             <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address</label>
-                            <input type="email" id="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                         </div>
                         <div>
                             <label for="service" class="block text-sm font-medium text-gray-300 mb-1">Service Needed</label>
-                            <select id="service" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <select id="service" name="service" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                                 <option>WordPress Development</option>
                                 <option>Node.js Development</option>
                                 <option>AI Development</option>
@@ -376,7 +393,7 @@
                         </div>
                         <div>
                             <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Project Details</label>
-                            <textarea id="message" rows="5" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
                         </div>
                         <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-medium hover:opacity-90 transition">
                             Send Message
