@@ -4,6 +4,53 @@ document.addEventListener('DOMContentLoaded', () => {
     const servicesList = document.getElementById('services-list');
     const resetButton = document.getElementById('reset-button');
 
+    fetch('calculator-services.json')
+        .then(response => response.json())
+        .then(data => {
+            for (const category in data) {
+                const categoryContainer = document.createElement('div');
+                categoryContainer.classList.add('mb-4');
+
+                const categoryHeader = document.createElement('button');
+                categoryHeader.type = 'button';
+                categoryHeader.classList.add('w-full', 'text-left', 'p-4', 'bg-gray-700', 'hover:bg-gray-600', 'transition', 'rounded-lg', 'font-bold', 'flex', 'justify-between', 'items-center');
+                categoryHeader.innerHTML = `
+                    <span>${category}</span>
+                    <i class="fas fa-chevron-down transition-transform"></i>
+                `;
+
+                const servicesContainer = document.createElement('div');
+                servicesContainer.classList.add('hidden', 'pt-4', 'pl-4', 'border-l-2', 'border-gray-600', 'ml-4');
+
+                data[category].forEach(service => {
+                    const label = document.createElement('label');
+                    label.classList.add('flex', 'items-center', 'justify-between', 'p-4', 'rounded-lg', 'bg-gray-700/50', 'border', 'border-gray-600', 'hover:bg-gray-700', 'transition', 'cursor-pointer', 'mb-2');
+                    label.innerHTML = `
+                        <span>
+                            <span class="font-bold">${service.name}</span>
+                            <span class="text-sm text-gray-400 block">${service.description}</span>
+                        </span>
+                        <span class="text-lg font-bold text-green-400">$${service.price}</span>
+                        <input type="checkbox" name="service" value="${service.price}" class="hidden">
+                    `;
+                    servicesContainer.appendChild(label);
+                });
+
+                categoryContainer.appendChild(categoryHeader);
+                categoryContainer.appendChild(servicesContainer);
+                servicesList.appendChild(categoryContainer);
+
+                categoryHeader.addEventListener('click', () => {
+                    servicesContainer.classList.toggle('hidden');
+                    categoryHeader.querySelector('i').classList.toggle('rotate-180');
+                });
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching services:', error);
+            servicesList.innerHTML = '<p class="text-red-500">Could not load services.</p>';
+        });
+
     const calculateTotal = () => {
         let total = 0;
         const checkedServices = form.querySelectorAll('input[name="service"]:checked');
