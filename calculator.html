@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft | Project Cost Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-900/80 backdrop-blur-md z-50 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold gradient-text">CodeCraft</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                    <a href="index.html#wordpress" class="nav-link">WordPress</a>
+                    <a href="index.html#nodejs" class="nav-link">Node.js</a>
+                    <a href="index.html#ai" class="nav-link">AI</a>
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i id="mobile-menu-open-icon" class="fas fa-bars text-xl block"></i>
+                        <i id="mobile-menu-close-icon" class="fas fa-times text-xl hidden"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html#home" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900">Home</a>
+                <a href="index.html#wordpress" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">WordPress</a>
+                <a href="index.html#nodejs" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Node.js</a>
+                <a href="index.html#ai" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">AI</a>
+                <a href="index.html#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Placeholder -->
+    <main class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                    <span class="gradient-text">Project Cost</span> Calculator
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
+                    Get a quick estimate for your web development project.
+                </p>
+            </div>
+            <!-- Calculator Form -->
+            <div class="bg-gray-800/50 p-8 rounded-xl border border-gray-700">
+                <form id="calculator-form">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Services -->
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6 gradient-text">Services</h3>
+                            <div class="space-y-4" id="services-list">
+                                <label class="flex items-center justify-between p-4 rounded-lg bg-gray-700/50 border border-gray-600 hover:bg-gray-700 transition cursor-pointer">
+                                    <span>
+                                        <span class="font-bold">Basic Website</span>
+                                        <span class="text-sm text-gray-400 block">Up to 5 pages</span>
+                                    </span>
+                                    <span class="text-lg font-bold text-green-400">$800</span>
+                                    <input type="checkbox" name="service" value="800" class="hidden">
+                                </label>
+                                <label class="flex items-center justify-between p-4 rounded-lg bg-gray-700/50 border border-gray-600 hover:bg-gray-700 transition cursor-pointer">
+                                    <span>
+                                        <span class="font-bold">eCommerce Store</span>
+                                        <span class="text-sm text-gray-400 block">Basic setup</span>
+                                    </span>
+                                    <span class="text-lg font-bold text-green-400">$1500</span>
+                                    <input type="checkbox" name="service" value="1500" class="hidden">
+                                </label>
+                                <label class="flex items-center justify-between p-4 rounded-lg bg-gray-700/50 border border-gray-600 hover:bg-gray-700 transition cursor-pointer">
+                                    <span>
+                                        <span class="font-bold">Custom Plugin</span>
+                                        <span class="text-sm text-gray-400 block">WordPress</span>
+                                    </span>
+                                    <span class="text-lg font-bold text-green-400">$1000</span>
+                                    <input type="checkbox" name="service" value="1000" class="hidden">
+                                </label>
+                                <label class="flex items-center justify-between p-4 rounded-lg bg-gray-700/50 border border-gray-600 hover:bg-gray-700 transition cursor-pointer">
+                                    <span>
+                                        <span class="font-bold">API Development</span>
+                                        <span class="text-sm text-gray-400 block">Node.js</span>
+                                    </span>
+                                    <span class="text-lg font-bold text-green-400">$2000</span>
+                                    <input type="checkbox" name="service" value="2000" class="hidden">
+                                </label>
+                                <label class="flex items-center justify-between p-4 rounded-lg bg-gray-700/50 border border-gray-600 hover:bg-gray-700 transition cursor-pointer">
+                                    <span>
+                                        <span class="font-bold">AI Integration</span>
+                                        <span class="text-sm text-gray-400 block">Chatbot or other AI feature</span>
+                                    </span>
+                                    <span class="text-lg font-bold text-green-400">$3000</span>
+                                    <input type="checkbox" name="service" value="3000" class="hidden">
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Total -->
+                        <div class="md:pl-8">
+                            <h3 class="text-2xl font-bold mb-6 gradient-text">Estimated Total</h3>
+                            <div class="bg-gray-900 p-8 rounded-xl border border-gray-700 text-center sticky top-24">
+                                <p class="text-gray-400 mb-2">Total Cost</p>
+                                <p id="total-cost" class="text-5xl font-bold text-green-400">$0</p>
+                                <button type="button" id="reset-button" class="mt-6 px-6 py-2 border border-red-500 text-red-500 rounded-full hover:bg-red-500/10 transition hidden">Reset</button>
+                            </div>
+                            <div class="mt-8 text-center">
+                                <p class="text-sm text-gray-500">This is an estimate. Prices may vary based on project complexity.</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 sm:px-6 lg:px-8 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-2xl font-bold gradient-text">CodeCraft</span>
+                    <p class="text-gray-500 mt-2">Crafting digital experiences since 2015</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="index.html#home" class="text-gray-400 hover:text-white transition">Home</a>
+                    <a href="index.html#wordpress" class="text-gray-400 hover:text-white transition">WordPress</a>
+                    <a href="index.html#nodejs" class="text-gray-400 hover:text-white transition">Node.js</a>
+                    <a href="index.html#ai" class="text-gray-400 hover:text-white transition">AI</a>
+                    <a href="index.html#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p>© 2023 CodeCraft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/calculator.js"></script>
+</body>
+</html>
