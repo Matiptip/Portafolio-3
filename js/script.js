@@ -37,20 +37,25 @@ function renderServicesSwiper() {
                 swiperWrapper.appendChild(slide);
             });
 
-            // Initialize Swiper for services
-            if (document.querySelector('.service-swiper')) {
-                new Swiper('.service-swiper', {
-                    loop: true,
-                    spaceBetween: 30,
-                    breakpoints: {
-                        320: { slidesPerView: 1, spaceBetween: 20 },
-                        768: { slidesPerView: 2, spaceBetween: 30 },
-                        1024: { slidesPerView: 3, spaceBetween: 30 }
-                    },
-                    pagination: { el: '.swiper-pagination', clickable: true },
-                    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-                });
-            }
+            // Initialize Swiper for services, waiting for the library to load
+            const initSwiper = () => {
+                if (typeof Swiper !== 'undefined') {
+                    new Swiper('.service-swiper', {
+                        loop: true,
+                        spaceBetween: 30,
+                        breakpoints: {
+                            320: { slidesPerView: 1, spaceBetween: 20 },
+                            768: { slidesPerView: 2, spaceBetween: 30 },
+                            1024: { slidesPerView: 3, spaceBetween: 30 }
+                        },
+                        pagination: { el: '.swiper-pagination', clickable: true },
+                        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+                    });
+                } else {
+                    setTimeout(initSwiper, 100);
+                }
+            };
+            initSwiper();
         })
         .catch(error => {
             console.error('Error fetching services:', error);
