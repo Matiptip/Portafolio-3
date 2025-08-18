@@ -51,6 +51,56 @@ document.addEventListener('DOMContentLoaded', () => {
             servicesList.innerHTML = '<p class="text-red-500">Could not load services.</p>';
         });
 
+    const packagesContainer = document.getElementById('packages-container');
+    const packages = {
+      "Blog Package": [
+        "Basic Website"
+      ],
+      "E-Shop Package": [
+        "Single Page Applications (React/Vue/Next.js)",
+        "Backends with Node.js",
+        "Custom UX/UI Design"
+      ],
+      "AI-Powered App Package": [
+        "Smart Chatbots",
+        "API Integrations"
+      ]
+    };
+
+    packagesContainer.addEventListener('click', (e) => {
+        const packageBtn = e.target.closest('.package-btn');
+        if (!packageBtn) return;
+
+        // Reset all current selections
+        const allCheckboxes = form.querySelectorAll('input[name="service"]');
+        allCheckboxes.forEach(checkbox => {
+            if (checkbox.checked) {
+                checkbox.checked = false;
+                toggleSelectedStyle(checkbox.closest('label'), false);
+            }
+        });
+
+        const packageName = packageBtn.dataset.package;
+        const servicesInPackage = packages[packageName];
+
+        if (servicesInPackage) {
+            servicesInPackage.forEach(serviceName => {
+                const checkbox = Array.from(allCheckboxes).find(cb => {
+                    const label = cb.closest('label');
+                    const nameSpan = label.querySelector('span > span.font-bold');
+                    return nameSpan && nameSpan.textContent === serviceName;
+                });
+
+                if (checkbox) {
+                    checkbox.checked = true;
+                    toggleSelectedStyle(checkbox.closest('label'), true);
+                }
+            });
+        }
+
+        calculateTotal();
+    });
+
     const calculateTotal = () => {
         let total = 0;
         const checkedServices = form.querySelectorAll('input[name="service"]:checked');
