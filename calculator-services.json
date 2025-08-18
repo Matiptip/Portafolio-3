@@ -1,110 +1,30 @@
 {
-  "WordPress Development": [
-    {
-      "name": "Basic Website",
-      "description": "Landing page / up to 5 pages",
-      "price": 800
-    },
-    {
-      "name": "Online Store with WooCommerce",
-      "description": "eCommerce setup (products, payment gateways, shipping)",
-      "price": 1500
-    },
-    {
-      "name": "Speed & SEO Optimization",
-      "description": "Highly requested by businesses with existing sites",
-      "price": 600
-    },
-    {
-      "name": "Custom Plugins",
-      "description": "Like your “Custom Plugin.”",
-      "price": 1200
-    },
-    {
-      "name": "Monthly Maintenance",
-      "description": "Updates, backups, security",
-      "price": 150
-    }
+  "wordpress_dev": [
+    { "key": "basic_website", "price": 800 },
+    { "key": "woocommerce", "price": 1500 },
+    { "key": "speed_seo", "price": 600 },
+    { "key": "custom_plugins", "price": 1200 },
+    { "key": "maintenance", "price": 150 }
   ],
-  "JavaScript / Full-Stack Development": [
-    {
-      "name": "Single Page Applications (React/Vue/Next.js)",
-      "description": "More dynamic websites",
-      "price": 2500
-    },
-    {
-      "name": "API Integrations",
-      "description": "Connect to third-party services (Google Maps, PayPal, Stripe, etc.)",
-      "price": 1000
-    },
-    {
-      "name": "Dashboards / Admin Panels",
-      "description": "Real-time data management",
-      "price": 2000
-    },
-    {
-      "name": "Backends with Node.js",
-      "description": "Matches your “API Development.”",
-      "price": 1800
-    },
-    {
-      "name": "Advanced Forms / Interactive Apps",
-      "description": "Very common in mid-level projects",
-      "price": 900
-    }
+  "js_dev": [
+    { "key": "spa", "price": 2500 },
+    { "key": "api_integrations", "price": 1000 },
+    { "key": "dashboards", "price": 2000 },
+    { "key": "backends", "price": 1800 },
+    { "key": "advanced_forms", "price": 900 }
   ],
-  "AI Development": [
-    {
-      "name": "Smart Chatbots",
-      "description": "Integration with WhatsApp, websites, or Messenger",
-      "price": 3000
-    },
-    {
-      "name": "Process Automation",
-      "description": "e.g., AI to classify emails or generate reports",
-      "price": 2600
-    },
-    {
-      "name": "Personalized Recommenders",
-      "description": "AI suggesting products in eCommerce",
-      "price": 3500
-    },
-    {
-      "name": "AI-Assisted Content Generation",
-      "description": "text, images",
-      "price": 1500
-    },
-    {
-      "name": "Voice Assistant Integrations (Alexa/Google)",
-      "description": "Alexa/Google",
-      "price": 2000
-    }
+  "ai_dev": [
+    { "key": "chatbots", "price": 3000 },
+    { "key": "automation", "price": 2600 },
+    { "key": "recommenders", "price": 3500 },
+    { "key": "content_gen", "price": 1500 },
+    { "key": "voice_integrations", "price": 2000 }
   ],
-  "Popular Add-ons": [
-    {
-      "name": "Custom UX/UI Design",
-      "description": "Not just templates",
-      "price": 1200
-    },
-    {
-      "name": "Multi-language Support",
-      "description": "",
-      "price": 500
-    },
-    {
-      "name": "Security & Anti-hacking Protection",
-      "description": "",
-      "price": 700
-    },
-    {
-      "name": "Migrations",
-      "description": "Wix, Shopify, Blogger → WordPress",
-      "price": 800
-    },
-    {
-      "name": "Consulting & Training",
-      "description": "Teaching clients to manage their websites",
-      "price": 300
-    }
+  "addons": [
+    { "key": "ux_ui", "price": 1200 },
+    { "key": "multilang", "price": 500 },
+    { "key": "security", "price": 700 },
+    { "key": "migrations", "price": 800 },
+    { "key": "training", "price": 300 }
   ]
 }

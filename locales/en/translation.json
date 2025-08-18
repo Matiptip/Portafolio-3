@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "home": "Home",
+    "wordpress": "WordPress",
+    "nodejs": "Node.js",
+    "ai": "AI",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title1": "Crafting Digital",
+    "title2": "Experiences",
+    "subtitle": "I build high-performance websites and applications with cutting-edge technologies.",
+    "services_btn": "My Services",
+    "contact_btn": "Contact Me"
+  },
+  "stats": {
+    "projects": "Projects Completed",
+    "experience": "Years Experience",
+    "satisfaction": "Client Satisfaction"
+  },
+  "services_section": {
+    "title": "Specialized Services",
+    "subtitle": "I offer tailored solutions across different technology stacks to meet your specific business needs.",
+    "get_started_btn": "Get Started"
+  },
+  "cta": {
+    "title": "Curious about the cost?",
+    "subtitle": "Use my project calculator to get a quick estimate for your project.",
+    "btn": "Project Calculator"
+  },
+  "portfolio_section": {
+    "title": "My Work",
+    "subtitle": "Here are a few examples of projects I've worked on."
+  },
+  "testimonials_section": {
+    "title": "Client Testimonials",
+    "subtitle": "Don't just take my word for it - here's what my clients say about working with me.",
+    "testimonial1": "\"The WordPress site they built for us increased our conversion rate by 40%. Their attention to detail is exceptional.\"",
+    "author1": "Sarah Johnson",
+    "role1": "CEO, TechStart",
+    "testimonial2": "\"Our Node.js API was delivered ahead of schedule and has handled millions of requests without issues.\"",
+    "author2": "Michael Chen",
+    "role2": "CTO, DataFlow",
+    "testimonial3": "\"The custom recommendation engine they developed increased our sales by 25%. Truly transformative AI work.\"",
+    "author3": "David Wilson",
+    "role3": "Director, AI Labs"
+  },
+  "contact_section": {
+    "title": "Ready to Start Your Project?",
+    "subtitle": "Get in touch to discuss how I can help bring your ideas to life.",
+    "name_label": "Your Name",
+    "email_label": "Email Address",
+    "service_label": "Service Needed",
+    "message_label": "Project Details",
+    "submit_btn": "Send Message",
+    "email_me": "Email Me",
+    "call_me": "Call Me",
+    "location": "Location",
+    "connect_with_me": "Connect With Me"
+  },
+  "footer": {
+    "subtitle": "Crafting digital experiences since 2015",
+    "copyright": "© 2023 CodeCraft. All rights reserved."
+  },
+  "calculator_page": {
+    "title": "Project Cost Calculator",
+    "subtitle": "Get a quick estimate for your web development project.",
+    "packages_title": "Or Choose a Package",
+    "blog_package_title": "Blog Package",
+    "blog_package_desc": "A simple and elegant blog or personal website.",
+    "eshop_package_title": "E-Shop Package",
+    "eshop_package_desc": "A complete e-commerce solution for your business.",
+    "ai_package_title": "AI-Powered App",
+    "ai_package_desc": "An application integrated with intelligent AI features.",
+    "services_title": "Services",
+    "total_title": "Estimated Total",
+    "total_cost_label": "Total Cost",
+    "reset_btn": "Reset",
+    "disclaimer": "This is an estimate. Prices may vary based on project complexity."
+  },
+  "projects": {
+    "moron": {
+      "title": "Municipio de Morón",
+      "description": "Official website for the Municipality of Morón, providing services and information to its citizens."
+    },
+    "serpa": {
+      "title": "Serpa",
+      "description": "Corporate website for Serpa, a leader in logistics and transportation services."
+    }
+  },
+  "calculator_services": {
+    "wordpress_dev": {
+      "category_title": "WordPress Development",
+      "basic_website": "Basic Website",
+      "basic_website_desc": "Landing page / up to 5 pages",
+      "woocommerce": "Online Store with WooCommerce",
+      "woocommerce_desc": "eCommerce setup (products, payment gateways, shipping)",
+      "speed_seo": "Speed & SEO Optimization",
+      "speed_seo_desc": "Highly requested by businesses with existing sites",
+      "custom_plugins": "Custom Plugins",
+      "custom_plugins_desc": "Like your “Custom Plugin.”",
+      "maintenance": "Monthly Maintenance",
+      "maintenance_desc": "Updates, backups, security"
+    },
+    "js_dev": {
+      "category_title": "JavaScript / Full-Stack Development",
+      "spa": "Single Page Applications (React/Vue/Next.js)",
+      "spa_desc": "More dynamic websites",
+      "api_integrations": "API Integrations",
+      "api_integrations_desc": "Connect to third-party services (Google Maps, PayPal, Stripe, etc.)",
+      "dashboards": "Dashboards / Admin Panels",
+      "dashboards_desc": "Real-time data management",
+      "backends": "Backends with Node.js",
+      "backends_desc": "Matches your “API Development.”",
+      "advanced_forms": "Advanced Forms / Interactive Apps",
+      "advanced_forms_desc": "Very common in mid-level projects"
+    },
+    "ai_dev": {
+      "category_title": "AI Development",
+      "chatbots": "Smart Chatbots",
+      "chatbots_desc": "Integration with WhatsApp, websites, or Messenger",
+      "automation": "Process Automation",
+      "automation_desc": "e.g., AI to classify emails or generate reports",
+      "recommenders": "Personalized Recommenders",
+      "recommenders_desc": "AI suggesting products in eCommerce",
+      "content_gen": "AI-Assisted Content Generation",
+      "content_gen_desc": "text, images",
+      "voice_integrations": "Voice Assistant Integrations (Alexa/Google)",
+      "voice_integrations_desc": "Alexa/Google"
+    },
+    "addons": {
+      "category_title": "Popular Add-ons",
+      "ux_ui": "Custom UX/UI Design",
+      "ux_ui_desc": "Not just templates",
+      "multilang": "Multi-language Support",
+      "multilang_desc": "",
+      "security": "Security & Anti-hacking Protection",
+      "security_desc": "",
+      "migrations": "Migrations",
+      "migrations_desc": "Wix, Shopify, Blogger → WordPress",
+      "training": "Consulting & Training",
+      "training_desc": "Teaching clients to manage their websites"
+    }
+  }
+}

@@ -16,12 +16,16 @@
                 <div class="flex items-center">
                     <a href="index.html" class="text-2xl font-bold gradient-text">CodeCraft</a>
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html#home" class="nav-link">Home</a>
-                    <a href="index.html#wordpress" class="nav-link">WordPress</a>
-                    <a href="index.html#nodejs" class="nav-link">Node.js</a>
-                    <a href="index.html#ai" class="nav-link">AI</a>
-                    <a href="index.html#contact" class="nav-link">Contact</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#home" class="nav-link" data-i18n="nav.home">Home</a>
+                    <a href="index.html#wordpress" class="nav-link" data-i18n="nav.wordpress">WordPress</a>
+                    <a href="index.html#nodejs" class="nav-link" data-i18n="nav.nodejs">Node.js</a>
+                    <a href="index.html#ai" class="nav-link" data-i18n="nav.ai">AI</a>
+                    <a href="index.html#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+                    <div class="flex items-center ml-4">
+                        <button id="lang-en" class="lang-btn px-3 py-1 text-sm rounded-md text-white font-bold">EN</button>
+                        <button id="lang-es" class="lang-btn px-3 py-1 text-sm rounded-md text-gray-400">ES</button>
+                    </div>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
@@ -36,11 +40,11 @@
         <!-- Mobile menu, show/hide based on menu state. -->
         <div class="md:hidden hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="index.html#home" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900">Home</a>
-                <a href="index.html#wordpress" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">WordPress</a>
-                <a href="index.html#nodejs" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Node.js</a>
-                <a href="index.html#ai" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">AI</a>
-                <a href="index.html#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Contact</a>
+                <a href="index.html#home" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900" data-i18n="nav.home">Home</a>
+                <a href="index.html#wordpress" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700" data-i18n="nav.wordpress">WordPress</a>
+                <a href="index.html#nodejs" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700" data-i18n="nav.nodejs">Node.js</a>
+                <a href="index.html#ai" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700" data-i18n="nav.ai">AI</a>
+                <a href="index.html#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700" data-i18n="nav.contact">Contact</a>
             </div>
         </div>
     </nav>
@@ -49,10 +53,10 @@
     <main class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
-                <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6" data-i18n="calculator_page.title">
                     <span class="gradient-text">Project Cost</span> Calculator
                 </h1>
-                <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
+                <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto" data-i18n="calculator_page.subtitle">
                     Get a quick estimate for your web development project.
                 </p>
             </div>
@@ -61,19 +65,19 @@
                 <form id="calculator-form">
                     <!-- Packages Section -->
                     <div class="mb-12">
-                        <h3 class="text-2xl font-bold mb-6 gradient-text text-center">Or Choose a Package</h3>
+                        <h3 class="text-2xl font-bold mb-6 gradient-text text-center" data-i18n="calculator_page.packages_title">Or Choose a Package</h3>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="packages-container">
                             <button type="button" data-package="Blog Package" class="package-btn text-left p-6 rounded-lg bg-gray-700/50 border border-gray-600 hover:bg-gray-700 hover:ring-2 hover:ring-purple-500 transition">
-                                <h4 class="text-xl font-bold">Blog Package</h4>
-                                <p class="text-sm text-gray-400 mt-1">A simple and elegant blog or personal website.</p>
+                                <h4 class="text-xl font-bold" data-i18n="calculator_page.blog_package_title">Blog Package</h4>
+                                <p class="text-sm text-gray-400 mt-1" data-i18n="calculator_page.blog_package_desc">A simple and elegant blog or personal website.</p>
                             </button>
                             <button type="button" data-package="E-Shop Package" class="package-btn text-left p-6 rounded-lg bg-gray-700/50 border border-gray-600 hover:bg-gray-700 hover:ring-2 hover:ring-purple-500 transition">
-                                <h4 class="text-xl font-bold">E-Shop Package</h4>
-                                <p class="text-sm text-gray-400 mt-1">A complete e-commerce solution for your business.</p>
+                                <h4 class="text-xl font-bold" data-i18n="calculator_page.eshop_package_title">E-Shop Package</h4>
+                                <p class="text-sm text-gray-400 mt-1" data-i18n="calculator_page.eshop_package_desc">A complete e-commerce solution for your business.</p>
                             </button>
                             <button type="button" data-package="AI-Powered App Package" class="package-btn text-left p-6 rounded-lg bg-gray-700/50 border border-gray-600 hover:bg-gray-700 hover:ring-2 hover:ring-purple-500 transition">
-                                <h4 class="text-xl font-bold">AI-Powered App</h4>
-                                <p class="text-sm text-gray-400 mt-1">An application integrated with intelligent AI features.</p>
+                                <h4 class="text-xl font-bold" data-i18n="calculator_page.ai_package_title">AI-Powered App</h4>
+                                <p class="text-sm text-gray-400 mt-1" data-i18n="calculator_page.ai_package_desc">An application integrated with intelligent AI features.</p>
                             </button>
                         </div>
                     </div>
@@ -82,7 +86,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <!-- Services -->
                         <div>
-                            <h3 class="text-2xl font-bold mb-6 gradient-text">Services</h3>
+                            <h3 class="text-2xl font-bold mb-6 gradient-text" data-i18n="calculator_page.services_title">Services</h3>
                             <div class="space-y-4" id="services-list">
                                 <!-- Services will be dynamically loaded here -->
                             </div>
@@ -90,14 +94,14 @@
 
                         <!-- Total -->
                         <div class="md:pl-8">
-                            <h3 class="text-2xl font-bold mb-6 gradient-text">Estimated Total</h3>
+                            <h3 class="text-2xl font-bold mb-6 gradient-text" data-i18n="calculator_page.total_title">Estimated Total</h3>
                             <div class="bg-gray-900 p-8 rounded-xl border border-gray-700 text-center sticky top-24">
-                                <p class="text-gray-400 mb-2">Total Cost</p>
+                                <p class="text-gray-400 mb-2" data-i18n="calculator_page.total_cost_label">Total Cost</p>
                                 <p id="total-cost" class="text-5xl font-bold text-green-400">$0</p>
-                                <button type="button" id="reset-button" class="mt-6 px-6 py-2 border border-red-500 text-red-500 rounded-full hover:bg-red-500/10 transition hidden">Reset</button>
+                                <button type="button" id="reset-button" class="mt-6 px-6 py-2 border border-red-500 text-red-500 rounded-full hover:bg-red-500/10 transition hidden" data-i18n="calculator_page.reset_btn">Reset</button>
                             </div>
                             <div class="mt-8 text-center">
-                                <p class="text-sm text-gray-500">This is an estimate. Prices may vary based on project complexity.</p>
+                                <p class="text-sm text-gray-500" data-i18n="calculator_page.disclaimer">This is an estimate. Prices may vary based on project complexity.</p>
                             </div>
                         </div>
                     </div>
@@ -112,22 +116,26 @@
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">
                     <span class="text-2xl font-bold gradient-text">CodeCraft</span>
-                    <p class="text-gray-500 mt-2">Crafting digital experiences since 2015</p>
+                    <p class="text-gray-500 mt-2" data-i18n="footer.subtitle">Crafting digital experiences since 2015</p>
                 </div>
                 <div class="flex flex-wrap justify-center gap-6">
-                    <a href="index.html#home" class="text-gray-400 hover:text-white transition">Home</a>
-                    <a href="index.html#wordpress" class="text-gray-400 hover:text-white transition">WordPress</a>
-                    <a href="index.html#nodejs" class="text-gray-400 hover:text-white transition">Node.js</a>
-                    <a href="index.html#ai" class="text-gray-400 hover:text-white transition">AI</a>
-                    <a href="index.html#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                    <a href="index.html#home" class="text-gray-400 hover:text-white transition" data-i18n="nav.home">Home</a>
+                    <a href="index.html#wordpress" class="text-gray-400 hover:text-white transition" data-i18n="nav.wordpress">WordPress</a>
+                    <a href="index.html#nodejs" class="text-gray-400 hover:text-white transition" data-i18n="nav.nodejs">Node.js</a>
+                    <a href="index.html#ai" class="text-gray-400 hover:text-white transition" data-i18n="nav.ai">AI</a>
+                    <a href="index.html#contact" class="text-gray-400 hover:text-white transition" data-i18n="nav.contact">Contact</a>
                 </div>
             </div>
             <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-                <p>© 2023 CodeCraft. All rights reserved.</p>
+                <p data-i18n="footer.copyright">© 2023 CodeCraft. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend/dist/umd/i18nextHttpBackend.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/script.js"></script>
     <script src="js/calculator.js"></script>
 </body>

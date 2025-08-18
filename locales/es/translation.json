@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "wordpress": "WordPress",
+    "nodejs": "Node.js",
+    "ai": "IA",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title1": "Creando Experiencias",
+    "title2": "Digitales",
+    "subtitle": "Construyo sitios web y aplicaciones de alto rendimiento con tecnologías de vanguardia.",
+    "services_btn": "Mis Servicios",
+    "contact_btn": "Contáctame"
+  },
+  "stats": {
+    "projects": "Proyectos Completados",
+    "experience": "Años de Experiencia",
+    "satisfaction": "Satisfacción del Cliente"
+  },
+  "services_section": {
+    "title": "Servicios Especializados",
+    "subtitle": "Ofrezco soluciones a medida en diferentes tecnologías para satisfacer las necesidades específicas de su negocio.",
+    "get_started_btn": "Empezar"
+  },
+  "cta": {
+    "title": "¿Sientes curiosidad por el costo?",
+    "subtitle": "Usa mi calculadora de proyectos para obtener una estimación rápida para tu proyecto.",
+    "btn": "Calculadora de Proyectos"
+  },
+  "portfolio_section": {
+    "title": "Mi Trabajo",
+    "subtitle": "Aquí hay algunos ejemplos de proyectos en los que he trabajado."
+  },
+  "testimonials_section": {
+    "title": "Testimonios de Clientes",
+    "subtitle": "No te fíes solo de mi palabra - esto es lo que mis clientes dicen sobre trabajar conmigo.",
+    "testimonial1": "\"El sitio de WordPress que construyeron para nosotros aumentó nuestra tasa de conversión en un 40%. Su atención al detalle es excepcional.\"",
+    "author1": "Sarah Johnson",
+    "role1": "CEO, TechStart",
+    "testimonial2": "\"Nuestra API de Node.js fue entregada antes de lo previsto y ha manejado millones de solicitudes sin problemas.\"",
+    "author2": "Michael Chen",
+    "role2": "CTO, DataFlow",
+    "testimonial3": "\"El motor de recomendación personalizado que desarrollaron aumentó nuestras ventas en un 25%. Un trabajo de IA verdaderamente transformador.\"",
+    "author3": "David Wilson",
+    "role3": "Director, AI Labs"
+  },
+  "contact_section": {
+    "title": "¿Listo para Empezar tu Proyecto?",
+    "subtitle": "Ponte en contacto para discutir cómo puedo ayudarte a dar vida a tus ideas.",
+    "name_label": "Tu Nombre",
+    "email_label": "Dirección de Correo Electrónico",
+    "service_label": "Servicio Necesario",
+    "message_label": "Detalles del Proyecto",
+    "submit_btn": "Enviar Mensaje",
+    "email_me": "Envíame un Correo",
+    "call_me": "Llámame",
+    "location": "Ubicación",
+    "connect_with_me": "Conecta Conmigo"
+  },
+  "footer": {
+    "subtitle": "Creando experiencias digitales desde 2015",
+    "copyright": "© 2023 CodeCraft. Todos los derechos reservados."
+  },
+  "calculator_page": {
+    "title": "Calculadora de Costo de Proyecto",
+    "subtitle": "Obtén una estimación rápida para tu proyecto de desarrollo web.",
+    "packages_title": "O Elige un Paquete",
+    "blog_package_title": "Paquete Blog",
+    "blog_package_desc": "Un blog o sitio web personal simple y elegante.",
+    "eshop_package_title": "Paquete Tienda Online",
+    "eshop_package_desc": "Una solución completa de comercio electrónico para tu negocio.",
+    "ai_package_title": "Aplicación con IA",
+    "ai_package_desc": "Una aplicación integrada con funciones inteligentes de IA.",
+    "services_title": "Servicios",
+    "total_title": "Total Estimado",
+    "total_cost_label": "Costo Total",
+    "reset_btn": "Reiniciar",
+    "disclaimer": "Esto es una estimación. Los precios pueden variar según la complejidad del proyecto."
+  },
+  "projects": {
+    "moron": {
+      "title": "Municipio de Morón",
+      "description": "Sitio web oficial del Municipio de Morón, que brinda servicios e información a sus ciudadanos."
+    },
+    "serpa": {
+      "title": "Serpa",
+      "description": "Sitio web corporativo de Serpa, líder en servicios de logística y transporte."
+    }
+  },
+  "calculator_services": {
+    "wordpress_dev": {
+      "category_title": "Desarrollo WordPress",
+      "basic_website": "Sitio Web Básico",
+      "basic_website_desc": "Página de destino / hasta 5 páginas",
+      "woocommerce": "Tienda Online con WooCommerce",
+      "woocommerce_desc": "Configuración de eCommerce (productos, pasarelas de pago, envío)",
+      "speed_seo": "Optimización de Velocidad y SEO",
+      "speed_seo_desc": "Muy solicitado por empresas con sitios existentes",
+      "custom_plugins": "Plugins Personalizados",
+      "custom_plugins_desc": "Como tu “Plugin Personalizado.”",
+      "maintenance": "Mantenimiento Mensual",
+      "maintenance_desc": "Actualizaciones, copias de seguridad, seguridad"
+    },
+    "js_dev": {
+      "category_title": "Desarrollo JavaScript / Full-Stack",
+      "spa": "Aplicaciones de Página Única (React/Vue/Next.js)",
+      "spa_desc": "Sitios web más dinámicos",
+      "api_integrations": "Integraciones de API",
+      "api_integrations_desc": "Conexión a servicios de terceros (Google Maps, PayPal, Stripe, etc.)",
+      "dashboards": "Paneles de Control / Administración",
+      "dashboards_desc": "Gestión de datos en tiempo real",
+      "backends": "Backends con Node.js",
+      "backends_desc": "Coincide con tu “Desarrollo de API.”",
+      "advanced_forms": "Formularios Avanzados / Aplicaciones Interactivas",
+      "advanced_forms_desc": "Muy común en proyectos de nivel medio"
+    },
+    "ai_dev": {
+      "category_title": "Desarrollo de IA",
+      "chatbots": "Chatbots Inteligentes",
+      "chatbots_desc": "Integración con WhatsApp, sitios web o Messenger",
+      "automation": "Automatización de Procesos",
+      "automation_desc": "Ej., IA para clasificar correos o generar informes",
+      "recommenders": "Sistemas de Recomendación Personalizados",
+      "recommenders_desc": "IA que sugiere productos en eCommerce",
+      "content_gen": "Generación de Contenido Asistida por IA",
+      "content_gen_desc": "texto, imágenes",
+      "voice_integrations": "Integraciones con Asistentes de Voz",
+      "voice_integrations_desc": "Alexa/Google"
+    },
+    "addons": {
+      "category_title": "Complementos Populares",
+      "ux_ui": "Diseño UX/UI Personalizado",
+      "ux_ui_desc": "No solo plantillas",
+      "multilang": "Soporte Multilingüe",
+      "multilang_desc": "",
+      "security": "Protección de Seguridad y Anti-hacking",
+      "security_desc": "",
+      "migrations": "Migraciones",
+      "migrations_desc": "Wix, Shopify, Blogger → WordPress",
+      "training": "Consultoría y Capacitación",
+      "training_desc": "Enseñando a los clientes a gestionar sus sitios web"
+    }
+  }
+}
