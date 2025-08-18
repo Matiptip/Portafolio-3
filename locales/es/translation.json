@@ -86,7 +86,9 @@
     "serpa": {
       "title": "Serpa",
       "description": "Sitio web corporativo de Serpa, líder en servicios de logística y transporte."
-    }
+    },
+    "view_project_btn": "Ver Proyecto",
+    "load_error": "No se pudieron cargar los proyectos."
   },
   "calculator_services": {
     "wordpress_dev": {

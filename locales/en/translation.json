@@ -86,7 +86,9 @@
     "serpa": {
       "title": "Serpa",
       "description": "Corporate website for Serpa, a leader in logistics and transportation services."
-    }
+    },
+    "view_project_btn": "View Project",
+    "load_error": "Could not load projects."
   },
   "calculator_services": {
     "wordpress_dev": {
