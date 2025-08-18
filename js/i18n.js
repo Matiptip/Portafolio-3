@@ -1,5 +1,5 @@
 const i18n = {
-    lng: 'en',
+    lng: localStorage.getItem('lng') || 'en',
     resources: {},
     async init() {
         try {
@@ -26,7 +26,16 @@ const i18n = {
     renderAllContent() {
         // Update static content with data-i18n tags
         document.querySelectorAll('[data-i18n]').forEach(el => {
-            el.innerHTML = this.t(el.dataset.i18n);
+            const key = el.dataset.i18n;
+            const translation = this.t(key);
+            // Handle nested elements like the gradient span in titles
+            if (el.children.length > 0 && el.children[0].nodeName === 'SPAN') {
+                const span = el.children[0];
+                el.innerHTML = translation;
+                el.prepend(span);
+            } else {
+                el.innerHTML = translation;
+            }
         });
 
         // Render dynamic content
@@ -39,6 +48,7 @@ const i18n = {
     },
     changeLanguage(lng) {
         this.lng = lng;
+        localStorage.setItem('lng', lng);
         this.renderAllContent();
         this.updateLangButtons();
     },
