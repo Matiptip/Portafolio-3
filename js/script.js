@@ -1,4 +1,66 @@
+function renderServicesSwiper() {
+    const swiperWrapper = document.querySelector('.service-swiper .swiper-wrapper');
+    if (!swiperWrapper) return;
+
+    fetch('services.json')
+        .then(response => response.json())
+        .then(services => {
+            swiperWrapper.innerHTML = ''; // Clear existing content
+            services.forEach(service => {
+                const slide = document.createElement('div');
+                slide.classList.add('swiper-slide');
+
+                const title = i18n.t(`main_page_services.${service.key}.title`);
+                const description = i18n.t(`main_page_services.${service.key}.description`);
+                const getStartedBtn = i18n.t('services_section.get_started_btn');
+
+                const featuresHtml = service.features.map(featureKey => `
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span>${i18n.t(`main_page_services.${service.key}.features.${featureKey}`)}</span>
+                    </li>
+                `).join('');
+
+                slide.innerHTML = `
+                    <div id="${service.key}" class="section-card bg-gray-800 rounded-xl p-8 border border-gray-700 hover:border-${service.color}/30 h-full flex flex-col">
+                        <div class="w-16 h-16 bg-${service.color}/10 rounded-lg flex items-center justify-center mb-6 glow">
+                            <i class="${service.icon} text-3xl text-${service.color}"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">${title}</h3>
+                        <p class="text-gray-400 mb-6 flex-grow">${description}</p>
+                        <ul class="space-y-3 mb-8">${featuresHtml}</ul>
+                        <a href="#contact" class="inline-block px-6 py-2 border border-${service.color} text-${service.color} rounded-full hover:bg-${service.color}/10 transition mt-auto">
+                            ${getStartedBtn}
+                        </a>
+                    </div>
+                `;
+                swiperWrapper.appendChild(slide);
+            });
+
+            // Initialize Swiper for services
+            if (document.querySelector('.service-swiper')) {
+                new Swiper('.service-swiper', {
+                    loop: true,
+                    spaceBetween: 30,
+                    breakpoints: {
+                        320: { slidesPerView: 1, spaceBetween: 20 },
+                        768: { slidesPerView: 2, spaceBetween: 30 },
+                        1024: { slidesPerView: 3, spaceBetween: 30 }
+                    },
+                    pagination: { el: '.swiper-pagination', clickable: true },
+                    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+                });
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching services:', error);
+            swiperWrapper.innerHTML = `<p class="text-center text-gray-400 col-span-full">${i18n.t('services.load_error')}</p>`;
+        });
+}
+
 function renderIndexPageContent() {
+    renderServicesSwiper();
+
     const portfolioContainer = document.getElementById('portfolio-container');
     if (portfolioContainer) {
         fetch('projects.json')
@@ -34,7 +96,6 @@ function renderIndexPageContent() {
                 portfolioContainer.innerHTML = `<p class="text-center text-gray-400 col-span-full">${i18n.t('projects.load_error')}</p>`;
             });
     }
-    // Note: Services swiper is not yet translated.
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -61,21 +122,6 @@ document.addEventListener('DOMContentLoaded', () => {
             closeIcon.classList.toggle('hidden');
             const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
             mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
-        });
-    }
-
-    // Initialize Swiper for services
-    if (document.querySelector('.service-swiper')) {
-        new Swiper('.service-swiper', {
-            loop: true,
-            spaceBetween: 30,
-            breakpoints: {
-                320: { slidesPerView: 1, spaceBetween: 20 },
-                768: { slidesPerView: 2, spaceBetween: 30 },
-                1024: { slidesPerView: 3, spaceBetween: 30 }
-            },
-            pagination: { el: '.swiper-pagination', clickable: true },
-            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
         });
     }
 });

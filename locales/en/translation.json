@@ -143,5 +143,67 @@
       "training": "Consulting & Training",
       "training_desc": "Teaching clients to manage their websites"
     }
+  },
+  "main_page_services": {
+    "wordpress": {
+      "title": "WordPress Development",
+      "description": "Custom WordPress themes, plugins, and full-site builds with optimized performance and security.",
+      "features": {
+        "theme_dev": "Custom Theme Development",
+        "plugin_customization": "Plugin Customization",
+        "woocommerce": "WooCommerce Solutions",
+        "performance": "Performance Optimization"
+      }
+    },
+    "nodejs": {
+      "title": "Node.js Development",
+      "description": "Scalable backend solutions, APIs, and full-stack applications built with modern JavaScript.",
+      "features": {
+        "rest_graphql": "REST & GraphQL APIs",
+        "real_time_apps": "Real-time Applications",
+        "microservices": "Microservices Architecture",
+        "db_integration": "Database Integration"
+      }
+    },
+    "ai": {
+      "title": "AI Development",
+      "description": "Intelligent solutions powered by machine learning, natural language processing, and computer vision.",
+      "features": {
+        "chatbots": "Chatbots & Virtual Assistants",
+        "predictive_analytics": "Predictive Analytics",
+        "image_recognition": "Image & Text Recognition",
+        "custom_ai": "Custom AI Solutions"
+      }
+    },
+    "ui_ux": {
+      "title": "UI/UX Design",
+      "description": "Crafting intuitive and visually appealing user interfaces that provide a seamless user experience.",
+      "features": {
+        "wireframing": "Wireframing & Prototyping",
+        "user_research": "User Research & Analysis",
+        "responsive_design": "Responsive Web Design",
+        "interaction_design": "Interaction Design"
+      }
+    },
+    "ecommerce": {
+      "title": "E-commerce Solutions",
+      "description": "Building robust and scalable online stores that drive sales and provide a great shopping experience.",
+      "features": {
+        "custom_storefronts": "Custom Storefronts",
+        "payment_integration": "Payment Gateway Integration",
+        "inventory_management": "Inventory Management",
+        "cart_optimization": "Shopping Cart Optimization"
+      }
+    },
+    "seo": {
+      "title": "SEO & Digital Marketing",
+      "description": "Increasing your online visibility and driving organic traffic to your website with proven SEO strategies.",
+      "features": {
+        "keyword_research": "Keyword Research & Strategy",
+        "on_off_page_seo": "On-page & Off-page SEO",
+        "content_marketing": "Content Marketing",
+        "analytics_reporting": "Analytics and Reporting"
+      }
+    }
   }
 }

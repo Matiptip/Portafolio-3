@@ -143,5 +143,67 @@
       "training": "Consultoría y Capacitación",
       "training_desc": "Enseñando a los clientes a gestionar sus sitios web"
     }
+  },
+  "main_page_services": {
+    "wordpress": {
+      "title": "Desarrollo WordPress",
+      "description": "Temas personalizados de WordPress, plugins y construcción de sitios completos con rendimiento y seguridad optimizados.",
+      "features": {
+        "theme_dev": "Desarrollo de Temas Personalizados",
+        "plugin_customization": "Personalización de Plugins",
+        "woocommerce": "Soluciones WooCommerce",
+        "performance": "Optimización del Rendimiento"
+      }
+    },
+    "nodejs": {
+      "title": "Desarrollo Node.js",
+      "description": "Soluciones de backend escalables, APIs y aplicaciones full-stack construidas con JavaScript moderno.",
+      "features": {
+        "rest_graphql": "APIs REST y GraphQL",
+        "real_time_apps": "Aplicaciones en Tiempo Real",
+        "microservices": "Arquitectura de Microservicios",
+        "db_integration": "Integración de Bases de Datos"
+      }
+    },
+    "ai": {
+      "title": "Desarrollo de IA",
+      "description": "Soluciones inteligentes impulsadas por aprendizaje automático, procesamiento de lenguaje natural y visión por computadora.",
+      "features": {
+        "chatbots": "Chatbots y Asistentes Virtuales",
+        "predictive_analytics": "Análisis Predictivo",
+        "image_recognition": "Reconocimiento de Imagen y Texto",
+        "custom_ai": "Soluciones de IA Personalizadas"
+      }
+    },
+    "ui_ux": {
+      "title": "Diseño UI/UX",
+      "description": "Creación de interfaces de usuario intuitivas y visualmente atractivas que brindan una experiencia de usuario perfecta.",
+      "features": {
+        "wireframing": "Wireframing y Prototipado",
+        "user_research": "Investigación y Análisis de Usuarios",
+        "responsive_design": "Diseño Web Responsivo",
+        "interaction_design": "Diseño de Interacción"
+      }
+    },
+    "ecommerce": {
+      "title": "Soluciones de E-commerce",
+      "description": "Construcción de tiendas en línea robustas y escalables que impulsan las ventas y brindan una excelente experiencia de compra.",
+      "features": {
+        "custom_storefronts": "Tiendas Personalizadas",
+        "payment_integration": "Integración de Pasarelas de Pago",
+        "inventory_management": "Gestión de Inventario",
+        "cart_optimization": "Optimización del Carrito de Compras"
+      }
+    },
+    "seo": {
+      "title": "SEO y Marketing Digital",
+      "description": "Aumentando su visibilidad en línea y dirigiendo tráfico orgánico a su sitio web con estrategias de SEO probadas.",
+      "features": {
+        "keyword_research": "Investigación y Estrategia de Palabras Clave",
+        "on_off_page_seo": "SEO On-page y Off-page",
+        "content_marketing": "Marketing de Contenidos",
+        "analytics_reporting": "Análisis e Informes"
+      }
+    }
   }
 }

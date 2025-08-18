@@ -1,0 +1,68 @@
+[
+  {
+    "key": "wordpress",
+    "icon": "fab fa-wordpress",
+    "color": "purple-500",
+    "features": [
+      "theme_dev",
+      "plugin_customization",
+      "woocommerce",
+      "performance"
+    ]
+  },
+  {
+    "key": "nodejs",
+    "icon": "fab fa-node-js",
+    "color": "green-500",
+    "features": [
+      "rest_graphql",
+      "real_time_apps",
+      "microservices",
+      "db_integration"
+    ]
+  },
+  {
+    "key": "ai",
+    "icon": "fas fa-robot",
+    "color": "pink-500",
+    "features": [
+      "chatbots",
+      "predictive_analytics",
+      "image_recognition",
+      "custom_ai"
+    ]
+  },
+  {
+    "key": "ui_ux",
+    "icon": "fas fa-palette",
+    "color": "blue-500",
+    "features": [
+      "wireframing",
+      "user_research",
+      "responsive_design",
+      "interaction_design"
+    ]
+  },
+  {
+    "key": "ecommerce",
+    "icon": "fas fa-shopping-cart",
+    "color": "orange-500",
+    "features": [
+      "custom_storefronts",
+      "payment_integration",
+      "inventory_management",
+      "cart_optimization"
+    ]
+  },
+  {
+    "key": "seo",
+    "icon": "fas fa-chart-line",
+    "color": "teal-500",
+    "features": [
+      "keyword_research",
+      "on_off_page_seo",
+      "content_marketing",
+      "analytics_reporting"
+    ]
+  }
+]
