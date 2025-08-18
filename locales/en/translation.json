@@ -24,7 +24,7 @@
     "get_started_btn": "Get Started"
   },
   "cta": {
-    "title": "Curious about the cost?",
+    "title": "Curious about the <span class='gradient-text'>cost</span>?",
     "subtitle": "Use my project calculator to get a quick estimate for your project.",
     "btn": "Project Calculator"
   },
@@ -63,7 +63,7 @@
     "copyright": "© 2023 CodeCraft. All rights reserved."
   },
   "calculator_page": {
-    "title": "Project Cost Calculator",
+    "title": "<span class='gradient-text'>Project Cost</span> Calculator",
     "subtitle": "Get a quick estimate for your web development project.",
     "packages_title": "Or Choose a Package",
     "blog_package_title": "Blog Package",
