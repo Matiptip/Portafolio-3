@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft | Service Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-900/80 backdrop-blur-md z-50 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold gradient-text">CodeCraft</a>
+                </div>
+                <div class="hidden md:flex items-center">
+                    <div class="flex space-x-8">
+                        <a href="index.html#home" class="nav-link" data-i18n="nav.home">Home</a>
+                        <a href="index.html#wordpress" class="nav-link" data-i18n="nav.wordpress">WordPress</a>
+                        <a href="index.html#nodejs" class="nav-link" data-i18n="nav.nodejs">Node.js</a>
+                        <a href="index.html#ai" class="nav-link" data-i18n="nav.ai">AI</a>
+                        <a href="index.html#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+                    </div>
+                    <div class="flex items-center ml-4">
+                        <button id="lang-en" class="lang-btn px-3 py-1 text-sm rounded-md text-white font-bold">EN</button>
+                        <button id="lang-es" class="lang-btn px-3 py-1 text-sm rounded-md text-gray-400">ES</button>
+                    </div>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i id="mobile-menu-open-icon" class="fas fa-bars text-xl block"></i>
+                        <i id="mobile-menu-close-icon" class="fas fa-times text-xl hidden"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html#home" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900" data-i18n="nav.home">Home</a>
+                <a href="index.html#wordpress" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700" data-i18n="nav.wordpress">WordPress</a>
+                <a href="index.html#nodejs" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700" data-i18n="nav.nodejs">Node.js</a>
+                <a href="index.html#ai" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700" data-i18n="nav.ai">AI</a>
+                <a href="index.html#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700" data-i18n="nav.contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto" id="service-detail-container">
+            <!-- Service details will be dynamically loaded here -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 sm:px-6 lg:px-8 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-2xl font-bold gradient-text">CodeCraft</span>
+                    <p class="text-gray-500 mt-2" data-i18n="footer.subtitle">Crafting digital experiences since 2015</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="index.html#home" class="text-gray-400 hover:text-white transition" data-i18n="nav.home">Home</a>
+                    <a href="index.html#wordpress" class="text-gray-400 hover:text-white transition" data-i18n="nav.wordpress">WordPress</a>
+                    <a href="index.html#nodejs" class="text-gray-400 hover:text-white transition" data-i18n="nav.nodejs">Node.js</a>
+                    <a href="index.html#ai" class="text-gray-400 hover:text-white transition" data-i18n="nav.ai">AI</a>
+                    <a href="index.html#contact" class="text-gray-400 hover:text-white transition" data-i18n="nav.contact">Contact</a>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p data-i18n="footer.copyright">© 2023 CodeCraft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/service-page.js"></script>
+    <script src="js/transitions.js"></script>
+</body>
+</html>

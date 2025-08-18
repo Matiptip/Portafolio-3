@@ -205,5 +205,17 @@
         "analytics_reporting": "Análisis e Informes"
       }
     }
+  },
+  "service_page": {
+    "related_projects_title": "Proyectos Relacionados",
+    "get_quote_btn": "Obtener una Cotización",
+    "features_title": "Características Clave",
+    "get_quote_subtitle": "¿Listo para empezar tu proyecto? Hablemos.",
+    "wordpress_extended_desc": "Ofrezco servicios integrales de desarrollo de WordPress, desde la creación de temas impresionantes y personalizados que reflejan la identidad de su marca hasta el desarrollo de potentes plugins que amplían la funcionalidad de su sitio. Ya sea que necesite un blog simple, un sitio web corporativo o una compleja tienda de comercio electrónico con WooCommerce, me aseguro de que su sitio de WordPress sea rápido, seguro y fácil de administrar.",
+    "nodejs_extended_desc": "Aprovechando el poder de Node.js, construyo aplicaciones de red rápidas, escalables y en tiempo real. Mi experiencia incluye la creación de robustas API RESTful y GraphQL, el desarrollo de arquitecturas basadas en microservicios para sistemas complejos y la integración con una amplia variedad de bases de datos. Entrego soluciones de backend que son tanto de alto rendimiento como mantenibles.",
+    "ai_extended_desc": "Llevo el poder de la Inteligencia Artificial a sus proyectos. Puedo desarrollar soluciones de IA personalizadas, desde chatbots inteligentes que mejoran la participación del cliente hasta modelos de análisis predictivo que proporcionan información empresarial valiosa. Mis servicios también incluyen procesamiento de lenguaje natural, visión por computadora para reconocimiento de imágenes y texto, y otras aplicaciones de aprendizaje automático.",
+    "ui_ux_extended_desc": "Un buen diseño es más que solo estética; se trata de crear una experiencia de usuario fluida e intuitiva. Mi proceso de diseño de UI/UX se centra en el usuario. Realizo investigación de usuarios, creo wireframes y prototipos, y diseño interfaces hermosas y receptivas que son fáciles de usar y visualmente atractivas. Me enfoco en crear un viaje de usuario que sea tanto lógico como agradable.",
+    "ecommerce_extended_desc": "Construyo soluciones completas de comercio electrónico que le ayudan a vender sus productos en línea. Desde escaparates personalizados que coinciden con su marca hasta integraciones seguras de pasarelas de pago y sistemas eficientes de gestión de inventario, proporciono todo lo que necesita para administrar una exitosa tienda en línea. También me enfoco en optimizar el carrito de compras y el proceso de pago para maximizar las conversiones.",
+    "seo_extended_desc": "Un sitio web increíble solo es efectivo si la gente puede encontrarlo. Ofrezco una gama de servicios de SEO y marketing digital para aumentar su visibilidad en línea y dirigir tráfico orgánico. Mis servicios incluyen investigación de palabras clave, SEO on-page y off-page, estrategias de marketing de contenidos y análisis e informes detallados para seguir su progreso."
   }
 }

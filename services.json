@@ -3,66 +3,48 @@
     "key": "wordpress",
     "icon": "fab fa-wordpress",
     "color": "purple-500",
-    "features": [
-      "theme_dev",
-      "plugin_customization",
-      "woocommerce",
-      "performance"
-    ]
+    "features": ["theme_dev", "plugin_customization", "woocommerce", "performance"],
+    "extended_description_key": "wordpress_extended_desc",
+    "related_projects": ["moron"]
   },
   {
     "key": "nodejs",
     "icon": "fab fa-node-js",
     "color": "green-500",
-    "features": [
-      "rest_graphql",
-      "real_time_apps",
-      "microservices",
-      "db_integration"
-    ]
+    "features": ["rest_graphql", "real_time_apps", "microservices", "db_integration"],
+    "extended_description_key": "nodejs_extended_desc",
+    "related_projects": ["serpa"]
   },
   {
     "key": "ai",
     "icon": "fas fa-robot",
     "color": "pink-500",
-    "features": [
-      "chatbots",
-      "predictive_analytics",
-      "image_recognition",
-      "custom_ai"
-    ]
+    "features": ["chatbots", "predictive_analytics", "image_recognition", "custom_ai"],
+    "extended_description_key": "ai_extended_desc",
+    "related_projects": []
   },
   {
     "key": "ui_ux",
     "icon": "fas fa-palette",
     "color": "blue-500",
-    "features": [
-      "wireframing",
-      "user_research",
-      "responsive_design",
-      "interaction_design"
-    ]
+    "features": ["wireframing", "user_research", "responsive_design", "interaction_design"],
+    "extended_description_key": "ui_ux_extended_desc",
+    "related_projects": ["serpa"]
   },
   {
     "key": "ecommerce",
     "icon": "fas fa-shopping-cart",
     "color": "orange-500",
-    "features": [
-      "custom_storefronts",
-      "payment_integration",
-      "inventory_management",
-      "cart_optimization"
-    ]
+    "features": ["custom_storefronts", "payment_integration", "inventory_management", "cart_optimization"],
+    "extended_description_key": "ecommerce_extended_desc",
+    "related_projects": []
   },
   {
     "key": "seo",
     "icon": "fas fa-chart-line",
     "color": "teal-500",
-    "features": [
-      "keyword_research",
-      "on_off_page_seo",
-      "content_marketing",
-      "analytics_reporting"
-    ]
+    "features": ["keyword_research", "on_off_page_seo", "content_marketing", "analytics_reporting"],
+    "extended_description_key": "seo_extended_desc",
+    "related_projects": []
   }
 ]

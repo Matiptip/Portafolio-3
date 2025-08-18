@@ -205,5 +205,17 @@
         "analytics_reporting": "Analytics and Reporting"
       }
     }
+  },
+  "service_page": {
+    "related_projects_title": "Related Projects",
+    "get_quote_btn": "Get a Quote",
+    "features_title": "Key Features",
+    "get_quote_subtitle": "Ready to start your project? Let's talk.",
+    "wordpress_extended_desc": "I provide comprehensive WordPress development services, from creating stunning, custom-built themes that reflect your brand identity to developing powerful plugins that extend the functionality of your site. Whether you need a simple blog, a corporate website, or a complex e-commerce store with WooCommerce, I ensure your WordPress site is fast, secure, and easy to manage.",
+    "nodejs_extended_desc": "Leveraging the power of Node.js, I build fast, scalable, and real-time network applications. My expertise includes creating robust RESTful and GraphQL APIs, developing microservices-based architectures for complex systems, and integrating with a wide variety of databases. I deliver backend solutions that are both high-performance and maintainable.",
+    "ai_extended_desc": "I bring the power of Artificial Intelligence to your projects. I can develop custom AI solutions, from intelligent chatbots that improve customer engagement to predictive analytics models that provide valuable business insights. My services also include natural language processing, computer vision for image and text recognition, and other machine learning applications.",
+    "ui_ux_extended_desc": "Good design is about more than just aesthetics; it's about creating a seamless and intuitive user experience. My UI/UX design process is centered around the user. I conduct user research, create wireframes and prototypes, and design beautiful, responsive interfaces that are both easy to use and visually appealing. I focus on creating a user journey that is both logical and enjoyable.",
+    "ecommerce_extended_desc": "I build complete e-commerce solutions that help you sell your products online. From custom storefronts that match your brand to secure payment gateway integrations and efficient inventory management systems, I provide everything you need to run a successful online store. I also focus on optimizing the shopping cart and checkout process to maximize conversions.",
+    "seo_extended_desc": "An amazing website is only effective if people can find it. I offer a range of SEO and digital marketing services to increase your online visibility and drive organic traffic. My services include keyword research, on-page and off-page SEO, content marketing strategies, and detailed analytics and reporting to track your progress."
   }
 }

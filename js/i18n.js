@@ -45,6 +45,9 @@ const i18n = {
         if (typeof renderCalculatorContent === 'function') {
             renderCalculatorContent();
         }
+        if (typeof renderServicePage === 'function') {
+            renderServicePage();
+        }
     },
     changeLanguage(lng) {
         this.lng = lng;

@@ -29,7 +29,7 @@ function renderServicesSwiper() {
                         <h3 class="text-2xl font-bold mb-4">${title}</h3>
                         <p class="text-gray-400 mb-6 flex-grow">${description}</p>
                         <ul class="space-y-3 mb-8">${featuresHtml}</ul>
-                        <a href="#contact" class="inline-block px-6 py-2 border border-${service.color} text-${service.color} rounded-full hover:bg-${service.color}/10 transition mt-auto">
+                        <a href="service.html?id=${service.key}" class="inline-block px-6 py-2 border border-${service.color} text-${service.color} rounded-full hover:bg-${service.color}/10 transition mt-auto">
                             ${getStartedBtn}
                         </a>
                     </div>
