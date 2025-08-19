@@ -28,14 +28,7 @@ const i18n = {
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.dataset.i18n;
             const translation = this.t(key);
-            // Handle nested elements like the gradient span in titles
-            if (el.children.length > 0 && el.children[0].nodeName === 'SPAN') {
-                const span = el.children[0];
-                el.innerHTML = translation;
-                el.prepend(span);
-            } else {
-                el.innerHTML = translation;
-            }
+            el.innerHTML = translation;
         });
 
         // Render dynamic content

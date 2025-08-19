@@ -19,7 +19,7 @@
     "satisfaction": "Satisfacción del Cliente"
   },
   "services_section": {
-    "title": "Servicios Especializados",
+    "title": "<span class='gradient-text'>Servicios</span> Especializados",
     "subtitle": "Ofrezco soluciones a medida en diferentes tecnologías para satisfacer las necesidades específicas de su negocio.",
     "get_started_btn": "Empezar"
   },
@@ -29,11 +29,11 @@
     "btn": "Calculadora de Proyectos"
   },
   "portfolio_section": {
-    "title": "Mi Trabajo",
+    "title": "Mi <span class='gradient-text'>Trabajo</span>",
     "subtitle": "Aquí hay algunos ejemplos de proyectos en los que he trabajado."
   },
   "testimonials_section": {
-    "title": "Testimonios de Clientes",
+    "title": "<span class='gradient-text'>Testimonios</span> de Clientes",
     "subtitle": "No te fíes solo de mi palabra - esto es lo que mis clientes dicen sobre trabajar conmigo.",
     "testimonial1": "\"El sitio de WordPress que construyeron para nosotros aumentó nuestra tasa de conversión en un 40%. Su atención al detalle es excepcional.\"",
     "author1": "Sarah Johnson",
@@ -46,7 +46,7 @@
     "role3": "Director, AI Labs"
   },
   "contact_section": {
-    "title": "¿Listo para Empezar tu Proyecto?",
+    "title": "¿Listo para <span class='gradient-text'>Empezar tu Proyecto?</span>",
     "subtitle": "Ponte en contacto para discutir cómo puedo ayudarte a dar vida a tus ideas.",
     "name_label": "Tu Nombre",
     "email_label": "Dirección de Correo Electrónico",
