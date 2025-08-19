@@ -56,18 +56,17 @@ function renderServicePage() {
                 <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">${extended_desc}</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="md:col-span-2">
-                    <h2 class="text-3xl font-bold mb-6">${features_title}</h2>
-                    <ul class="space-y-4 text-lg">${featuresHtml}</ul>
-                </div>
-                <div class="text-center bg-gray-800/50 p-8 rounded-xl border border-gray-700">
-                    <h3 class="text-2xl font-bold mb-4">${get_quote_btn}</h3>
-                    <p class="text-gray-400 mb-6">${get_quote_subtitle}</p>
-                    <a href="index.html#contact" class="inline-block px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-medium hover:opacity-90 transition">
-                        ${contact_me_btn}
-                    </a>
-                </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-6">${features_title}</h2>
+                <ul class="space-y-4 text-lg mb-12">${featuresHtml}</ul>
+            </div>
+
+            <div class="text-center bg-gray-800/50 p-8 rounded-xl border border-gray-700">
+                <h3 class="text-2xl font-bold mb-4">${get_quote_btn}</h3>
+                <p class="text-gray-400 mb-6">${get_quote_subtitle}</p>
+                <a href="index.html#contact" class="inline-block px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-medium hover:opacity-90 transition">
+                    ${contact_me_btn}
+                </a>
             </div>
 
             ${relatedProjects.length > 0 ? `
