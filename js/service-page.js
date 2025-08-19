@@ -29,13 +29,14 @@ function renderServicePage() {
         const get_quote_btn = i18n.t('service_page.get_quote_btn', 'Get a Quote');
         const get_quote_subtitle = i18n.t('service_page.get_quote_subtitle', 'Ready to start your project? Let\'s talk.');
         const contact_me_btn = i18n.t('hero.contact_btn', 'Contact Me');
+        const cost_simulator_btn = i18n.t('service_page.cost_simulator_btn', 'Cost Simulator');
 
 
         const featuresHtml = service.features.map(featureKey => `
-            <li class="flex items-start">
-                <i class="fas fa-check-circle text-purple-400 mr-3 mt-1"></i>
-                <span>${i18n.t(`main_page_services.${service.key}.features.${featureKey}`)}</span>
-            </li>
+            <div class="bg-gray-800/40 p-6 rounded-lg flex items-center">
+                <i class="fas fa-check-circle text-purple-400 text-2xl mr-4"></i>
+                <span class="text-lg">${i18n.t(`main_page_services.${service.key}.features.${featureKey}`)}</span>
+            </div>
         `).join('');
 
         const projectsHtml = relatedProjects.map(project => `
@@ -57,16 +58,21 @@ function renderServicePage() {
             </div>
 
             <div>
-                <h2 class="text-3xl font-bold mb-6">${features_title}</h2>
-                <ul class="space-y-4 text-lg mb-12">${featuresHtml}</ul>
+                <h2 class="text-3xl font-bold mb-8 text-center">${features_title}</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">${featuresHtml}</div>
             </div>
 
             <div class="text-center bg-gray-800/50 p-8 rounded-xl border border-gray-700">
                 <h3 class="text-2xl font-bold mb-4">${get_quote_btn}</h3>
-                <p class="text-gray-400 mb-6">${get_quote_subtitle}</p>
-                <a href="index.html#contact" class="inline-block px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-medium hover:opacity-90 transition">
-                    ${contact_me_btn}
-                </a>
+                <p class="text-gray-400 mb-8">${get_quote_subtitle}</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="index.html#contact" class="inline-block px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-medium hover:opacity-90 transition">
+                        ${contact_me_btn}
+                    </a>
+                    <a href="calculator.html" class="inline-block px-8 py-3 border border-gray-700 rounded-full font-medium hover:bg-gray-800 transition">
+                        ${cost_simulator_btn}
+                    </a>
+                </div>
             </div>
 
             ${relatedProjects.length > 0 ? `
